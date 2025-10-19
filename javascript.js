@@ -6,8 +6,11 @@ function getComputerChoice() {
                 else return "Scissors";
 }
 
-let humanChoice = prompt("You wanna play as (Rock/Paper/Scissors):")
+function getHumanChoice() {
+    return prompt("You wanna play as (Rock/Paper/Scissors):")
+}
 
+let humanChoice = getHumanChoice();
 console.log(humanChoice);
 
 let humanScore, computerScore;
@@ -58,5 +61,5 @@ function playRound(humanChoice, computerChoice) {
 }
 
 playRound(humanChoice, computerChoice);
-console.log(humanScore)
-console.log(computerScore)
+console.log("Your score: ", humanScore)
+console.log("Computer's score: ", computerScore)
