@@ -83,6 +83,7 @@ let humanScore, computerScore;
  computerScore = 0;
     function playRound(humanChoice, computerChoice) {
         humanChoice = getHumanChoice();
+        humanChoice = humanChoice[0].toUpperCase() + humanChoice.slice(1).toLowerCase();
     console.log(humanChoice);
     computerChoice = getComputerChoice();
     console.log(computerChoice);
